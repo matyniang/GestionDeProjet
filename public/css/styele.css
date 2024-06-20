@@ -1,0 +1,312 @@
+
+    .home{
+     height: 80vh;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items:end;  
+    background-size: cover; 
+    background-color: white;
+    }
+    .home h1{
+      margin-right: 150px;
+      margin-bottom: 0px;
+      margin-top: 0px;
+      font-weight: 700;
+      position: absolute;
+    }
+    .home h1 span {
+    color: orangered; 
+  
+  }
+  .home p {
+    color: rgb(14, 1, 1); 
+    margin-right: 5px;
+    margin-top: 150px;
+    font-weight: 100;
+    
+  
+  
+  }
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+/* css acceuil */
+.sidebar {
+    width: 100%;
+    background-color: rgb(247, 202, 191);
+    color: white;
+    height: 110px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 1px 2px orangered;
+    z-index: 1000;
+}
+
+.sidebar h2 {
+    margin: 0;
+    font-size: 24px;
+   
+}
+
+.sidebar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 0 10px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    background-color: black;
+
+    
+}
+
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+.content {
+    padding: 80px 20px 20px;
+}
+
+.content h1 {
+    font-size: 36px;
+}
+
+.content p {
+    font-size: 18px;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+
+.sidebar2 {
+    width: 100%;
+    background-color:orangered;
+    color: white;
+    height: 110px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.sidebar2 ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar2 ul li {
+    padding: 0 10px;
+}
+
+.sidebar2 ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.sidebar2 ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+
+  form {
+    border: thin black solid;
+    border-radius: 7px;
+    padding: 5px;
+    width: 30%;
+    background-color: rgb(129, 128, 128);
+  }
+  input {
+    border: thin black solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    width: 40%;
+    font-style: initial;
+  }
+  select {
+    border: thin black solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    width: 40%;
+  }
+  button {
+    padding: 10px;
+    width: 30%;
+    color: rgb(214, 212, 212);
+    background-color: rgb(14, 13, 13);
+    border-radius: 10px;
+  }
+  span {
+    font-style: italic;
+    font-weight: 700;
+    color: orangered;
+    
+  }
+  h1 {
+    text-align: center;
+  }  
+  
+  .home1 h1{
+      
+    margin-left: 700px;
+    margin-bottom: 100px;
+    margin-top: 300px;
+    font-weight: 500;
+  }
+  .home1 h1 span {
+  color: orangered; 
+
+}
+
+.sidebar3 {
+  width: 100%;
+  background-color: rgb(192, 192, 190);
+  color: white;
+  height: 110px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0 1px 2px orangered;
+  z-index: 1000;
+}
+
+.sidebar3 h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.sidebar3 ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar3 ul li {
+  padding: 0 10px;
+}
+
+.sidebar3 ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  background-color: black;
+
+  
+}
+
+
+.sidebar3 ul li a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+.content {
+  padding: 80px 20px 20px;
+}
+
+.content h1 {
+  font-size: 36px;
+}
+
+.content p {
+  font-size: 18px;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+
+/* css login*/
+form {
+  border: thin black solid;
+  border-radius: 20px;
+  padding: 5px;
+  margin: auto;
+  width: 50%;
+  }
+  input{
+  
+  border: thin black solid;
+  border-radius: 10px;
+  padding: 20px;
+  margin: auto;
+  width: 50%;
+  font-style: initial;
+  
+  }
+  
+  
+  button{
+  padding: 10px;
+  margin: auto;
+  width: 30%;
+  color: black;
+  background-color: orangered;
+  }
+  span{
+  font-style: italic;
+  
+  }
+  h1{
+  text-align: center;
+  }
+  
+

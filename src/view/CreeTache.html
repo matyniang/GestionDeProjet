@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Task</title>
+</head>
+<body>
+    <h2>Create Task</h2>
+    <form method="post" action="../../public/CreeTache.php">
+        Task Name: <input type="text" name="nom_tache" required><br><br>
+        Start Date: <input type="date" name="date_debut" required><br><br>
+        End Date: <input type="date" name="date_fin" required><br><br>
+        Project ID: <input type="number" name="ID_projet" required><br><br>
+        Performed By (Member ID): <input type="number" name="ID_effectuer_par" required><br><br>
+        Created By (User ID): <input type="number" name="ID_creer_par" required><br><br>
+        <input type="submit" value="Create Task">
+    </form>
+</body>
+</html>

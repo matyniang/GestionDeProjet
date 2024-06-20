@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../public/css/styele1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="sidebar3">
+    <h2> <li> <a href="page_admin.html"><i class="fa-solid fa-house"></i>Accueil</a></li></h2>
+    <ul>
+        <li><a href="AddUser.html">create user</a></li>
+        <li><a href="ListUser.php">list user</a></li>
+        <li><a href="AddProjet.html">create projet</a></li>
+        <li><a href="listProjet.php">list projet</a></li>
+        <li><a href="accueil.html" class="Btn_add">logout</a></li>
+
+    </ul>
+</div>
+<div class="add_projet">
+   
+    
+    <h1><span>CREATION DE PROJET </span></h1>
+    <form action= "../../public/AddProjet.php" method="POST">
+
+      <div>
+        <label for="nom_projet"></label>
+        <input type="text" placeholder="nom_projet" id="nom_projet" name="nom_projet" required />
+      </div>
+      <br/>
+      <div>
+        <label for="description1"></label>
+        <input type="text" placeholder="description1" id="description1" name="description1" required />
+      </div>
+      <br/>
+      <div>
+        <label for="date_debut"></label>
+        <input type="date" placeholder="date_debut" name="date_debut" id="date_debut" required />
+      </div>
+      <br/>
+      <div>
+        <label for="date_fin"></label>
+        <input type="date" placeholder="date_fin" name="date_fin" id="date_fin" required />
+      </div>
+      <br/>
+      
+      <label for="statu"></label>
+        <select placeholder="statu" name="statut" id="statut" required>
+          <option value="a faire"> à faire</option>
+          <option value="en cours">en cours</option>
+          <option value="termine">termine</option>
+        </select>
+        <br/>
+      <div>
+      <label for="type de projet"></label>
+        <select placeholder="type de projet" name="type de projet" id="type de projet" required>
+          <option value="TTM"> TTM</option>
+          <option value="HTTM">HTTM</option>
+          <option value="INTERNE">INTERNE</option>
+        </select>
+      </div>
+      <button type="submit">Enregistrer</button>
+    </form>
+
+</body>
+</html>

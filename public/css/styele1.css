@@ -1,0 +1,204 @@
+
+
+  button{
+    padding: 10px;
+    margin: auto;
+    width: 10%;
+    color: black;
+    border-radius: 10px;
+    
+    }
+    span{
+    font-style: italic;
+    
+    }
+    h1{
+    text-align: center;
+    }
+
+    /*sidebar*/
+    .sidebar3 {
+        width: 100%;
+        background-color: rgb(247, 202, 191);
+        color: white;
+        height: 110px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        box-shadow: 0 1px 2px orangered;
+        z-index: 1000;
+      }
+      
+      .sidebar3 h2 {
+        margin: 0;
+        font-size: 24px;
+      }
+      
+      .sidebar3 ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .sidebar3 ul li {
+        padding: 0 10px;
+      }
+      
+      .sidebar3 ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px;
+        background-color: black;
+        border-radius: 10px;
+        display: flex;
+        
+      }
+      
+      
+      .sidebar3 ul li a:hover {
+        background-color: #eb9898;
+        border-radius: 5px;
+      }
+      
+      .content {
+        padding: 80px 20px 20px;
+      }
+      
+      .content h1 {
+        font-size: 36px;
+      }
+      
+      .content p {
+        font-size: 18px;
+      }
+      
+      
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      
+      .content {
+        flex: 1;
+        padding: 20px;
+      }
+      
+      
+    .search-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .search-container i {
+        margin-right: 10px;
+    }
+
+    .home1{
+        height: 80vh;
+       display: flex; 
+       flex-direction: column; 
+       justify-content: center; 
+       align-items:end;  
+       background-size: cover; 
+       background-color: white;
+       }
+       .home1 h1{
+         margin-right: 150px;
+         margin-bottom: 0px;
+         margin-top: 0px;
+         font-weight: 700;
+         position: absolute;
+       }
+       .home1 h1 span {
+       color: orangered; 
+     
+     }
+     .home1 p {
+       color: rgb(14, 1, 1); 
+       margin-right: 5px;
+       margin-top: 150px;
+       font-weight: 100;
+       
+     
+     
+     }
+     body {
+       margin: 0;
+       font-family: Arial, sans-serif;
+   }
+   .add_user {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+  }
+    
+  
+  form {
+    border: thin black solid;
+    border-radius: 7px;
+    padding: 5px;
+    
+    background-color: rgb(168, 168, 168);
+  }
+  input {
+    border: thin black solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    width: 40%;
+    font-style: initial;
+  }
+  .recherche{
+    border: thin black solid;
+    border-radius: 10px;
+    margin: auto;
+    width: 50%;
+    font-style: initial;
+  }
+  select {
+    border: thin black solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    width: 40%;
+  }
+  button {
+    padding: 10px;
+    width: 30%;
+    color: rgb(214, 212, 212);
+    background-color: rgb(14, 13, 13);
+    border-radius: 10px;
+  }
+
+  span {
+    font-style: italic;
+    font-weight: 700;
+    color: orangered;
+    
+  }
+  h1 {
+    text-align: center;
+  }  
+  
+  .add_projet {
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+  }
