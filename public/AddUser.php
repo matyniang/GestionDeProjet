@@ -17,14 +17,14 @@ if ($conn->connect_error) {
 // Get POST data
 $nom_complet = $_POST['nom_complet'];
 $fonction = $_POST['fonction'];
-$poste = $_POST['poste'];
+$rolee = $_POST['rolee'];
 $statut = $_POST['statut'];
 $email = $_POST['email'];
 $mot_de_passe = $_POST['mot_de_passe'];
 
 
 // Validate input
-if (empty($nom_complet) || empty($fonction) || empty($poste) || empty($statut) || empty($email) ||  empty($mot_de_passe)) {
+if (empty($nom_complet) || empty($fonction) || empty($rolee) || empty($statut) || empty($email) ||  empty($mot_de_passe)) {
     die(json_encode(["success" => false, "error" => "All fields are required"]));
 }
 
@@ -37,15 +37,15 @@ $stmt = $conn->prepare($verify_email);
 $stmt->bind_param("s", $email);
 $stmt->execute();
 $resultat_email = $stmt->get_result();
-
+$message="Email already exists";
 if ($resultat_email->num_rows > 0) {
-    die(json_encode(["success" => false, "error" => "Email already exists"]));
+    die($message);
 }
 
 // Insert user
-$requete = "INSERT INTO Utilisateur (nom_complet, fonction, poste, statut, email,  mot_de_passe) VALUES (?, ?, ?, ?, ?, ?)";
+$requete = "INSERT INTO Utilisateur (nom_complet, fonction, rolee, statut, email,  mot_de_passe) VALUES (?, ?, ?, ?, ?, ?)";
 $stmt = $conn->prepare($requete);
-$stmt->bind_param("ssssss", $nom_complet, $fonction, $poste, $statut, $email, $hash_mot_de_passe);
+$stmt->bind_param("ssssss", $nom_complet, $fonction, $rolee, $statut, $email, $hash_mot_de_passe);
 
 
 if ($stmt->execute()) {

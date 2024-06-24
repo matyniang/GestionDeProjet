@@ -13,3 +13,4 @@ if ($conn->connect_error) {
     die(json_encode(["message" => "Échec de la connexion: " . $conn->connect_error]));
 }
 
+$requete = ("");

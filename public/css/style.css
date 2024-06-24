@@ -5,6 +5,7 @@ table {
     font-size: 0.8rem;
     letter-spacing: 1px;
     width: 100%;
+
   }
   
   caption {
@@ -29,7 +30,7 @@ table {
   }
   
   tbody > tr:nth-of-type(even) {
-    background-color: rgb(245, 84, 159);
+    background-color: rgb(195, 235, 253);
   }
   
   tfoot th {

@@ -28,14 +28,14 @@ if (empty($mot_de_passe)) {
 }
 
 // Verify if user exists
-$requete = "SELECT mot_de_passe , poste FROM Utilisateur WHERE email = ? ";
+$requete = "SELECT mot_de_passe , rolee FROM Utilisateur WHERE email = ? ";
 
 $stmt = $conn->prepare($requete);
 $stmt->bind_param("s", $email);
 $stmt->execute();
 $stmt->store_result();
 if ($stmt->num_rows > 0) {
-    $stmt->bind_result($hash_mot_de_passe , $poste2);
+    $stmt->bind_result($hash_mot_de_passe , $rolee2);
     $stmt->fetch();
 /*$tab = array(
     "Admin"=>"administrateur"
@@ -45,7 +45,7 @@ if ($stmt->num_rows > 0) {
         // Store user data in session
         $_SESSION['email'] = $email;
         //$_SESSION['poste'] = $poste;
-         if ($poste2 == "administrateur"){
+         if ($rolee2 == "administrateur"){
            header("Location: ../src/view/page_admin.html") ;
          }else { 
             header("Location: ../src/view/page_user.html");

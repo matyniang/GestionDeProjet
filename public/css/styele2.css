@@ -1,12 +1,14 @@
 
   
    input {
-    border: thin rgb(255, 0, 106) solid;
-    border-radius: 10px;
+    border: thin rgb(34, 7, 18) solid;
+    
     padding: 10px;
     margin: auto;
     width: 50%;
     font-style: initial;
+    justify-content: center;
+    text-align: center;
     
   }
   
@@ -15,7 +17,7 @@
     
     color: rgb(214, 212, 212);
     background-color: rgb(14, 13, 13);
-    border-radius: 5px;
+   
   }
   
   h1 {

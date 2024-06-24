@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../public/css/styele1.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="sidebar3">
+    <h2>  <a href="page_admin.html"><i class="fa-solid fa-house"></i>Accueil</a></h2>
+          
+    <ul>
+      <li>
+          <h3>
+              <a href="AddUser.html">
+                  <i class="fa-solid fa-user-plus"style="margin-right: 12px;"></i>Ajouter utilisateur
+              </a>
+          </h3>
+      </li>
+  </ul>
+  
+
+    <ul>  
+      <li>
+        <h3>
+          <a href="ListUser.php"><i class="fa-solid fa-list" style="margin-right: 13px;"></i>liste des utilisateurs
+
+          </a>
+        </h3>
+      </li>
+    </ul>
+
+    <ul>
+        <li><h3><a href="AddProjet.html"><i class="fa-solid fa-folder-plus" style="margin-right: 13px;"></i>ajouter projet</a></h3></li>
+    </ul>
+
+    <ul>
+        <li><h3><a href="listProjet.php"><i class="fa-solid fa-list-check" style="margin-right: 13px"></i>liste des projets</a></h3></li>
+    </ul>
+
+    <ul>
+        <li><h3><a href="Creerprofil.html"><i class="fa-solid fa-circle-user" style="margin-right: 13px;"></i>Profil</a></h3></li>
+    </ul>
+     <ul>
+      <li><h3> <a href="accueil.html" class="Btn_add"><i class="fa-solid fa-arrow-right-from-bracket" style="margin-right: 13px;"></i>se deconnecter</a></h3></li>
+   </ul>
+
+
+</div>
+<h1> profil</h1>
+<div class="profil"> 
+    <form action= "../../public/Creerprofil.php" method="POST">
+      <div>
+        <label for="nom_complet"></label>
+        <input type="text" placeholder="nom complet" id="nom_complet" name="nom_complet" required />
+      </div>
+
+      <div>
+        <label for="type_de_profil"></label>
+        <select placeholder="type de profil" name="type_de_profil" id="type_de_profil" required>
+          <option value="employe">Employé</option>
+          <option value="administrateur">Admin</option>
+          <option value="chef-de-service">Chef de service</option>
+        </select>
+      </div>
+      <div>
+      <input type="submit" value="enregistrer">
+    </div>
+  </div>
+</body>
+</html>
+    
