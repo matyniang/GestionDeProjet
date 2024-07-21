@@ -115,10 +115,14 @@ $conn->close();
             <li class="nav-item">
             <a class="nav-link" href="listeProfilDroit.php"><i class="fa-solid fa-circle-user"></i> Gestion profil et droit</a>
         </li>
+        
+        <li class="nav-item">
+            <a class="nav-link" href="dashboard.php"><i class="fa-solid fa-chart-line"></i> tableau de bord</a>
+        </li>
             <!-- Le bouton de déconnexion est déplacé ici pour l'aligner à droite -->
             <li class="nav-item ml-auto">
                 <form id="logout-form" action="../controller/logout.php" method="post">
-                    <button type="submit" onclick="confirmLogout(event)" class="btn btn-outline-light"><i class="fa-solid fa-arrow-right-from-bracket"></i> Déconnexion</button>
+                    <button type="submit" onclick="confirmLogout(event)" class="btn btn-outline-light"><i class="fa-solid fa-arrow-right-from-bracket"></i> </button>
                 </form>
             </li>
         </ul>

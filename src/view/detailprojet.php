@@ -116,9 +116,13 @@ $conn->close();
             <li class="nav-item">
                 <a class="nav-link" href="listeProfilDroit.php"><i class="fa-solid fa-circle-user"></i> Gestion profil et droit</a>
             </li>
+            
+            <li class="nav-item">
+            <a class="nav-link" href="dashboard.php"><i class="fa-solid fa-chart-line"></i> tableau de bord</a>
+        </li>
             <li class="nav-item ml-auto">
                 <form id="logout-form" action="../controller/logout.php" method="post">
-                    <button type="submit" onclick="confirmLogout(event)" class="btn btn-outline-light"><i class="fa-solid fa-arrow-right-from-bracket"></i> Déconnexion</button>
+                    <button type="submit" onclick="confirmLogout(event)" class="btn btn-outline-light"><i class="fa-solid fa-arrow-right-from-bracket"></i> </button>
                 </form>
             </li>
         </ul>
@@ -141,9 +145,9 @@ $conn->close();
     <table border="1" cellpadding="15" cellspacing="0" class="table table-striped">
         <thead>
         <tr>
-            <th>ID</th>
-            <th>Nom Complet</th>
-            <th>Action</th>
+            <th style="background:orangered; color:#ffffff">ID</th>
+            <th style="background:orangered; color:#ffffff">Nom Complet</th>
+            <th style="background:orangered; color:#ffffff">Action</th>
         </tr>
         </thead>
         <tbody>
@@ -172,14 +176,14 @@ $conn->close();
     <table border="1" cellpadding="15" cellspacing="0" class="table table-striped">
         <thead>
         <tr>
-            <th>ID</th>
-            <th>Nom de la Tâche</th>
-            <th>Date de Début</th>
-            <th>Date de Fin</th>
-            <th>Statut</th>
-            <th>Effectuée par</th>
-            <th>Créée par</th>
-            <th>Action</th>
+            <th style="background:orangered; color:#ffffff" >ID</th>
+            <th style="background:orangered; color:#ffffff" >Nom de la Tâche</th>
+            <th style="background:orangered; color:#ffffff" >Date de Début</th>
+            <th style="background:orangered; color:#ffffff" >Date de Fin</th>
+            <th style="background:orangered; color:#ffffff" >Statut</th>
+            <th style="background:orangered; color:#ffffff" >Effectuée par</th>
+            <th style="background:orangered; color:#ffffff" >Créée par</th>
+            <th style="background:orangered; color:#ffffff" >Action</th>
         </tr>
         </thead>
         <tbody>
