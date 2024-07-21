@@ -1,5 +1,5 @@
 <?php
-header('Content-Type: application/json');
+session_start();
 
 $servername = "localhost";
 $username = "root";

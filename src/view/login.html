@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../public/css/styele2.css">
+    <link rel="stylesheet" href="../../public/css/login.css">
     <script src="../../public/scripte/login.js"></script>
     <title>Document</title>
 </head>
@@ -12,28 +13,28 @@
     <div class="sidebar3">
         <h2>
           <ul>
-            <li><a href="accueil.html">Accueil</a></li>   
+            <li><a href="index.html">Accueil</a></li>   
           </ul>
         </h2>
     </div>
-    <div>
+    <div class="login-container">
   
         <h1><span>Se connecter</span></h1>
         <form action= "../../public/login.php" method="POST">
-          <div>
-            <label for="email"></label>
+          <div class="form-group">
+            <label for="email">Email</label>
         
             <input type="email" placeholder="email" id="email" name="email" required>
          </div>
 
-        <BR></BR>
-        <div>
-          <label for="mot_de_passe"></label>
+        
+        <div class="form-group">
+          <label for="mot_de_passe">Mot de passe</label>
         
           <input type="password" placeholder="mot de passe" id="mot_de_passe" name="mot_de_passe" required>
         </div>
-        <BR></BR>
-        <button type="submit">connection</button>
+        
+        <button type="submit" >connexion</button>
          
       </form>
       </div>

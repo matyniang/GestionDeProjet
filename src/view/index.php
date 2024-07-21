@@ -10,30 +10,15 @@
     <body>
         
         <div class="sidebar">
-            <h2><span>Accueil</span></h2>
-            <ul>
+            <h2>Accueil</h2>
+            <ul class="ul">
                <h2><li><a href="login.html">se connecter</a></li></h2> 
             </ul>
         </div>
     <div class="home">
-      <h1>Bienvenue dans votre application <span>SUIVI DE PROJET</span><i class='bx bx-edit-alt'></i></h1>
-      <h2><p> l'appli specialement conçue pour <br> vous aider à gérer vos projets.</p></h2>
+      <h1>Bienvenue dans votre application <br> <span>SUIVI DE PROJET</span><i class='bx bx-edit-alt'></i></h1>
+      <img class="image" src="../../static/img2.png" >
+ 
       
-      <div class="sidebar2">
-        <ul>
-            <li><a href=""></a></li>
-            
-        </ul>
-    </div>
     </body>
     </html> 
-
-
-
-
-
-
-
-
-
-   

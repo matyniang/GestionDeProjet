@@ -1,6 +1,7 @@
 <?php
-session_start();
-header('Content-Type: application/json');
+
+SESSION_start();
+/*header('Content-Type: application/json');*/
 
 $servername = "localhost";
 $username = "root";
@@ -60,4 +61,3 @@ if ($stmt->num_rows > 0) {
 
 $stmt->close();
 $conn->close();
-

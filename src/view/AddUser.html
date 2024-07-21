@@ -4,87 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="../../public/css/styele1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="../../public/scripte/logout.js"></script>
+    <link rel="stylesheet" href="../../public/css/listprojet.css">
     <script src="../../public/scripte/AddUser.js"></script>
     <title>Document</title>
 </head>
-<body>
-  
-<div class="sidebar3">
-  <h2>  <a href="page_admin.html"><i class="fa-solid fa-house"></i>Accueil</a></h2>
-          
-          <ul>
-            <li>
-                <h3>
-                    <a href="AddUser.html">
-                        <i class="fa-solid fa-user-plus"style="margin-right: 12px;"></i>Ajouter utilisateur
-                    </a>
-                </h3>
-            </li>
-        </ul>
-        <ul>
-         <li>
-              <h3>
-                    <a href="AffecterMembre.php">
-                      <i class="fa-solid fa-circle"style=" margin-right: 12px;"></i>affecter membre 
-                  </a>
-              </h3>
+<body><nav class="navbar navbar-expand-lg navbar-custom">
+  <a class="navbar-brand" href="page_admin.html"><i class="fa-solid fa-house"></i> Accueil</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="nav-link" href="ListUser.php"><i class="fa-solid fa-user-tie"></i> Gestion des utilisateurs</a>
           </li>
-       </ul>
+          <li class="nav-item">
+              <a class="nav-link" href="listProjet.php"><i class="fa-solid fa-list-check"></i> Gestion des projets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="listeProfilDroit.php"><i class="fa-solid fa-circle-user"></i> Gestion profil et droit</a>
+        </li>
+          <li class="nav-item ml-auto">
+              <form id="logout-form" action="../controller/logout.php" method="post">
+                  <button type="submit" onclick="confirmLogout(event)" class="btn btn-outline-light"><i class="fa-solid fa-arrow-right-from-bracket"></i> Déconnexion</button>
+              </form>
+          </li>
+      </ul>
+  </div>
+</nav>
 
-           <ul>  
-            <li>
-              <h3>
-                <a href="ListUser.php"><i class="fa-solid fa-list" style="margin-right: 13px;"></i>liste des utilisateurs
-
-                </a>
-              </h3>
-            </li>
-          </ul>
-
-          <ul>
-              <li><h3><a href="AddProjet.html"><i class="fa-solid fa-folder-plus" style="margin-right: 13px;"></i>ajouter projet</a></h3></li>
-          </ul>
-
-          <ul>
-              <li><h3><a href="listProjet.php"><i class="fa-solid fa-list-check" style="margin-right: 13px"></i>liste des projets</a></h3></li>
-          </ul>
-
-          <ul>
-              <li><h3><a href="Creerprofil.html"><i class="fa-solid fa-circle-user" style="margin-right: 13px;"></i>Profil</a></h3></li>
-          </ul>
-           <ul>
-            <li><h3> <a href="accueil.html" class="Btn_add"><i class="fa-solid fa-arrow-right-from-bracket" style="margin-right: 13px;"></i>se deconnecter</a></h3></li>
-         </ul>
-
+</div><div class="container">
   
-</div>
-
-<div class="add_user">
-   
-    
-    <h1><span>CREATION D’UTILISATEUR</span></h1>
+  <div class="container mt-5">
+    <div class="form-container">
+    <a href="ListUser.php" class="btn btn-retour">Retour</a>
+       <div class="form-header text-center">
+    <h1>CREATION D’UTILISATEUR</h1>
+    </div>
     <form action= "../../public/AddUser.php" method="POST">
-      <div>
-        <label for="nom_complet"></label>
+      <div class ="form-group">
+        <label for="nom_complet">Prénom et Nom</label>
         <input type="text" placeholder="nom complet" id="nom_complet" name="nom_complet" required />
       </div>
-      <br/>
-      <div>
-        <label for="fonction"></label>
+      
+      <div class ="form-group">
+        <label for="fonction">Fonction</label>
         <input type="text" placeholder="fonction" id="fonction" name="fonction" required />
       </div>
-      <br/>
-      <div>
-        <label for="rolee"></label>
+      
+      <div class ="form-group">
+        <label for="rolee">Rôle</label>
         <select placeholder="role" name="rolee" id="rolee" required>
           <option value="user">User</option>
           <option value="administrateur">Administrateur</option>
         </select>
       </div>
-      <br/>
-      <div>
-        <label for="statut"></label>
+      
+      <div class ="form-group">
+        <label for="statut">Statut</label>
         <select placeholder="statut" name="statut" id="statut" required>
           <option value="actif">actif</option>
           <option value="inactif">inactif</option>
@@ -92,21 +71,23 @@
           <option value="supprime">supprime</option>
         </select>
       </div>
-      <br/>
-      <div>
-        <label for="email"></label>
+      
+      <div class ="form-group">
+        <label for="email">Email</label>
         <input type="email" placeholder="email" name="email" id="email" required />
       </div>
-      <br/>
-            <div>
-        <label for="mot_de_passe"></label>
+      
+            <div class ="form-group">
+        <label for="mot_de_passe">Mot de passe</label>
         <input type="password" placeholder="mot de passe" name="mot_de_passe" id="mot_de_passe" required />
       </div>
-      <br/>
-      <button type="submit">Enregistrer</button>
-    </form>
-    <div class="sidebar0"> 
       
+      <button type="submit">Enregistrer</button>
+    
+    </form>
+     
+      
+  </div>
   </div>
 </body>
 </html>

@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6eefa;
+    margin: 0;
+    padding: 0;
+}
+.navbar-custom {
+    background-color: #000080;
+}
+.navbar-custom .navbar-brand, 
+.navbar-custom .nav-link {
+    color: white;
+}
+.navbar-custom .navbar-toggler {
+    border: none;
+}
+.navbar-custom .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICA8cGF0aCBkPSJNMSw4IEwgMTYsMTYgTSwxMiw4IEwgMTYsNiBMMiwwIiBmaWxsPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1kYXNoYXJyYXk9IjEwIiBzdHJva2Utb3BhY2l0eT0ibm9uZSIvPjwvcGF0aD4KPC9zdmc+Cg==');
+}
+.navbar-nav {
+    margin-left: auto;
+}
+.navbar-nav .nav-item {
+    margin-left: 20px;
+}
+.navbar-nav .nav-link {
+    color: white;
+    padding: 10px;
+}
+.navbar-nav .nav-link:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
+}
+.btn-outline-light {
+    border: 1px solid #fff;
+    color: #fff;
+}
+.btn-outline-light:hover {
+    background-color: #0056b3;
+    border: 1px solid #0056b3;
+}
+.profil {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.profil h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.form-group input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+.form-group input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.btn-retour {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    background-color: blue;
+}

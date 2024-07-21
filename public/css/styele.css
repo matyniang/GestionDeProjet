@@ -9,10 +9,10 @@
     background-color: white;
     }
     .home h1{
-      margin-right: 150px;
+      margin-right: 50px;
       margin-bottom: 0px;
       margin-top: 0px;
-      font-weight: 700;
+      font-weight: 600;
       position: absolute;
     }
     .home h1 span {
@@ -32,17 +32,25 @@
     margin: 0;
     font-family: Arial, sans-serif;
 }
+
+.image{
+  width: 1000px;
+  height: 800px;
+  
+}
 /* css acceuil */
 .sidebar {
-    width: 100%;
-    background-color: rgb(247, 202, 191);
+    width: 50%;
+    height: 100%;
+    background-color: rgb(31, 31, 116);
     color: white;
-    height: 110px;
+    border-bottom-right-radius: 90%; 
+   
     position: fixed;
-    top: 0;
+    right: 0;
     left: 0;
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: space-between;
     padding: 0 20px;
     box-shadow: 0 1px 2px orangered;
@@ -51,8 +59,8 @@
 
 .sidebar h2 {
     margin: 0;
-    font-size: 24px;
-   
+    font-size: 50px;
+    
 }
 
 .sidebar ul {
@@ -69,7 +77,8 @@
 .sidebar ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 30px;
+    
    
     
     
@@ -79,6 +88,11 @@
 .sidebar ul li a:hover {
     background-color: #575757;
     border-radius: 5px;
+}
+
+.sidebar .ul{
+  margin-right: 50px;
+
 }
 
 .content {
@@ -112,7 +126,7 @@ body {
     width: 100%;
     background-color:orangered;
     color: white;
-    height: 110px;
+    height: 70px;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -122,6 +136,8 @@ body {
     box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
     z-index: 1000;
 }
+
+
 
 .sidebar2 ul {
     list-style: none;
@@ -153,6 +169,7 @@ body {
     padding: 5px;
     width: 30%;
     background-color: rgb(129, 128, 128);
+    background-image: b;
   }
   input {
     border: thin black solid;
@@ -200,7 +217,7 @@ body {
 
 .sidebar3 {
   width: 100%;
-  background-color: rgb(192, 192, 190);
+  background-color: rgb(190, 190, 192);
   color: white;
   height: 110px;
   position: fixed;

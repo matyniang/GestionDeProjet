@@ -1,28 +1,18 @@
-
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Body styles */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-.form-container {
-    max-width: 600px;
-    margin:  auto;
-    padding: 30px;
-    border: 1px solid #dee2e6;
-    border-radius: 10px;
     background-color: #f8f9fa;
-    max-width: 600px;
-    
+    line-height: 1.6;
 }
 
-.form-header {
-    margin-bottom: 30px;
-}
+/* Sidebar styles */
 .sidebar3 {
     width: 250px;
     position: fixed;
@@ -32,21 +22,25 @@ body {
     background-color: #343a40;
     padding-top: 20px;
     color: white;
-    overflow: auto;
+    overflow-y: auto;
     z-index: 100;
 }
-.sidebar3 h2, .sidebar3 h3 {
+
+.sidebar3 h2 {
     padding-left: 20px;
     margin: 10px 0;
 }
+
 .sidebar3 ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
+
 .sidebar3 li {
     padding: 10px 0;
 }
+
 .sidebar3 li a {
     color: white;
     text-decoration: none;
@@ -55,13 +49,41 @@ body {
     align-items: center;
     padding: 10px 20px;
 }
+
 .sidebar3 li a:hover {
     background-color: #495057;
     border-radius: 5px;
 }
+
 .sidebar3 li a i {
     margin-right: 15px;
 }
-.container {
-    margin-left: 270px; 
+
+/* Main content area */
+.home1 {
+    margin-left: 250px;
+    padding: 20px;
+    background-color: #ffffff;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #b0b2bd;
+    padding-bottom: 10px;
+    background: #0d24aa;
+    border-radius: 5px;
+    color: #ffffff;
+    text-align: center;
+}
+
+h1 span {
+    font-weight: bold;
+}
+
+.home1 i {
+    font-size: 24px;
+    vertical-align: middle;
+    margin-left: 5px;
 }
